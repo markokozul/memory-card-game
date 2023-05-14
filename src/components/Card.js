@@ -1,7 +1,14 @@
-export function Card({ src, name }) {
+export function Card({ src, name, shuffleCards, check, id }) {
   return (
-    <div>
-      <img src={src} alt=""></img>
+    <div className="card">
+      <img
+        src={src}
+        alt=""
+        onClick={() => {
+          shuffleCards();
+          check(id);
+        }}
+      ></img>
       <p>{name}</p>
     </div>
   );
