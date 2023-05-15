@@ -7,7 +7,7 @@ export const Context = createContext("");
 function App() {
   const [hide, setHide] = useState("hide");
   const [data, setData] = useState(null);
-  const [score, setScore] = useState(11);
+  const [score, setScore] = useState(0);
   const [highscore, setHighscore] = useState(0);
   const [resultDisplay, setResultDisplay] = useState(null);
 

@@ -1,7 +1,6 @@
 import { useContext, useState } from "react";
 import { Context } from "../App";
 import { Card } from "./Card";
-import { click } from "@testing-library/user-event/dist/click";
 
 export function ImageCards() {
   const { data, score, setScore, setHighscore, highscore, displayResult } =
