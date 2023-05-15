@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/memory-card-game/static/css/main.0eebacbd.css",
+    "main.js": "/memory-card-game/static/js/main.f10d9f48.js",
+    "index.html": "/memory-card-game/index.html",
+    "main.0eebacbd.css.map": "/memory-card-game/static/css/main.0eebacbd.css.map",
+    "main.f10d9f48.js.map": "/memory-card-game/static/js/main.f10d9f48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0eebacbd.css",
+    "static/js/main.f10d9f48.js"
+  ]
+}
