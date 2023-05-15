@@ -1,9 +1,10 @@
 import { useContext, useState } from "react";
 import { Context } from "../App";
 import { Card } from "./Card";
+import { click } from "@testing-library/user-event/dist/click";
 
 export function ImageCards() {
-  const { data, score, setScore, setHighscore, highscore } =
+  const { data, score, setScore, setHighscore, highscore, displayResult } =
     useContext(Context);
   const [imagesArray, setImagesArray] = useState(null);
   const [clickedImagesArray, setClickedImagesArray] = useState([]);
@@ -29,12 +30,16 @@ export function ImageCards() {
         setScore(0);
         setClickedImagesArray([]);
         bool = false;
+        displayResult(bool);
       }
     });
     if (bool) {
       setScore(score + 1);
       if (score >= highscore) {
         setHighscore(highscore + 1);
+      }
+      if (score === 12) {
+        displayResult(bool);
       }
     }
   };
